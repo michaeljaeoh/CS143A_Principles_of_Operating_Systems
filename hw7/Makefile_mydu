@@ -1,0 +1,12 @@
+CC = gcc
+CFLAGS = -I.
+PROGRAM = mydu
+
+all: mydu.c
+	$(CC) -o $(PROGRAM) mydu.c $(CFLAGS)
+
+run: $(PROGRAM)
+	./$(PROGRAM) $(INPUT)
+
+clean:
+	rm $(PROGRAM)

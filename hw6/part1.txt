@@ -1,0 +1,12 @@
+The condition of "mutual exclusion" holds because a chopstick can only be held by one philosopher
+at any point in time. The condidtion of "hold and wait" holds because the philosophers will hold onto
+one chopstick and wait until another chopstick is available before they can begin eating. The condition
+of "no preemption" holds because the philosophers are unable to speak to each other, meaning they cannot
+tell another philosopher that they need a chopstick and could potentially be waiting for another chopstick
+to become available indefinitely. The condition of a "circular wait" holds because there is a scenario
+where each philosopher is holding the chopstick on their right and waiting on the philospher to their left to
+put down their chopstick. Deadlocks could be avoided by eliminatin any of of the four conditions because these
+four conditions are somewhat related to each other. If there is no "mutual exclusion", then a chopstick can be used
+at the same time by more than one philosopher so there will be no need for "holding and waiting" and will also remove
+the condition of "circular wait". If "preemption" is allowed, the philosophers would be able to speak to one another 
+and ask for a chopstick from another philosopher instead of silently waiting forever.

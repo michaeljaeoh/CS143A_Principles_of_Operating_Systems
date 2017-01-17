@@ -1,0 +1,9 @@
+Concurrency can be useful because it allows for the handling of events that 
+are happening in parallel such as handling multiple web page requests at the 
+same time. It can also be useful because it can allow for efficient use of
+time during the execution of an application by allowing for different tasks
+to be completed while waiting for the input/output operations to finish.
+This ability to be able to switch back and forth between different tasks is
+what makes it useful on a single-CPU machine because it allows to create the
+illusion of programs running concurrently.
+

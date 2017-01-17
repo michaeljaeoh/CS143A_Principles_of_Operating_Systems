@@ -1,0 +1,8 @@
+The 4 properties of a critical section are that there must be mutual exclusion, progress must be made whenever 
+a thread enters a critical section, there is bounded waiting, and entering and exiting a critical section must be 
+time efficient. To have mutual exclusion, only one thread may be able to enter a critical section at a time. Progress 
+will be made as long as all threads that enter a critical section will eventually leave and the only way a thread may 
+block another thread from entering a critical section is if the blocking thread is already in the critical section. 
+To have bounded waiting means that all threads that are waiting to enter a critical section are gauranteed to eventually be granted 
+access to it. Finally, for a critical section to be time efficient, there must not be too much overhead when attempting to enter 
+and exit a critical section.

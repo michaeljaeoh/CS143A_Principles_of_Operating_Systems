@@ -1,0 +1,12 @@
+CC = gcc
+CFLAGS =-lpthread
+PROGRAM = mutex_compute
+
+all: mutex_compute.c
+	$(CC) -o $(PROGRAM) mutex_compute.c $(CFLAGS)
+
+run: $(PROGRAM)
+	./$(PROGRAM) $(INPUT)
+
+clean:
+	rm $(PROGRAM)

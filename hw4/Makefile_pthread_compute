@@ -1,0 +1,12 @@
+CC = gcc
+CFLAGS =-lpthread
+PROGRAM = pthread_compute
+
+all: pthread_compute.c
+	$(CC) -o $(PROGRAM) pthread_compute.c $(CFLAGS)
+
+run: $(PROGRAM)
+	./$(PROGRAM) $(INPUT)
+
+clean:
+	rm $(PROGRAM)

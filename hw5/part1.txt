@@ -1,0 +1,6 @@
+Shortest Job First (SJF) could result in starvation in the case where there are many short jobs
+that are continually added, which will starve long jobs. Shortest Remaining Time First (SRTF) could 
+also result in starvation in same case where short processes are continually added and get to be completed
+before a long process even has a chance to start. Priority scheduling algorithm may result in starvation
+for processes that have a low priority because the higher priority processes may take an indefnite amount of 
+time to complete, thus the low priority processes will have to wait indefinitely. 

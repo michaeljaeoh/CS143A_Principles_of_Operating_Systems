@@ -1,0 +1,6 @@
+A process is a program that is in execution while a thread is a path of execution that 
+is contained within a process. Another difference would be that multiple threads in a 
+process share the same address space but multiple process will not. If the task to be 
+executed is large, such as opening a web browser, it would be preferable to use a process. 
+If the task to be executed is small, such as handling a web page request, it would be 
+preferable to use a thread.

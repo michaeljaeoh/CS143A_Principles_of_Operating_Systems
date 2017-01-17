@@ -1,0 +1,6 @@
+In order to read the file /foo/bar the file system(fs) must find the inode for bar. The fs will need to traverse the given
+pathname to find this inode. For the first step, the fs will read the block from the disk with the inode number of the root directory.
+Afterwards, the fs will locate the pointer that leads to the entry foo and identify it's inode number. The fs will 
+then go to the block with the inode number associated with foo and locate the pointer to bar. Once located, the 
+fs will read the inode number for bar into memory. The fs will then check the permissions on the file, specify the file as
+being opened, and return the file to the user. In this process, there will be a total of 3 disk accesses.

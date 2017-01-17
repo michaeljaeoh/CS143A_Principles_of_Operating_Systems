@@ -1,0 +1,4 @@
+1. Main Memory
+2. Cache
+3. I/O Devices
+4. CPU
